@@ -76,3 +76,40 @@
 - advantages
 
   <img src="paper_reading.assets/image-20200704001828063.png" alt="image-20200704001828063" style="zoom:50%;" />
+
+
+
+### Optimal Seam Finding and Image Labeling
+
+- ghosting problem caused by the motion
+
+- create labeling for all pxels in the composite image, and merge source images along the optimal seams
+
+  > each pixel in the composite image comes from only one source image, the ghosting problems can be avoided
+
+- dynamic programming: differ the least
+
+  <img src="paper_reading.assets/image-20200704101425899.png" alt="image-20200704101425899" style="zoom:50%;" />
+
+  1. error surface $e = (I_c^o-S_c^o)^2$  (c)
+  2. (d)<img src="paper_reading.assets/image-20200704101327718.png" alt="image-20200704101327718" style="zoom:50%;" />
+  3. (e) all possible paths
+  4. (f) The optimal path $m_c$ can be obtained by tracing back the paths with a minimal cost from bottom to top.
+
+- color correction improve quality of optimal seam finding and image labeling
+
+  <img src="paper_reading.assets/image-20200704105336945.png" alt="image-20200704105336945" style="zoom:50%;" />
+
+
+
+### Transition Smoothing with Image Blending
+
+- **simple linear blending**: images are similar in color and luminance after color correction
+  - on a band that is $\delta$ pixels wide on both sides of the seam
+  - <img src="paper_reading.assets/image-20200704111222165.png" alt="image-20200704111222165" style="zoom:50%;" />
+  - n: order
+- **Poisson Blending**
+  - perform image blending in the gradient domain
+  - gradiend vector field $(G_x, G_y)$, with gradients of source images using the labeling obtained using optimal seams
+  - <img src="paper_reading.assets/image-20200704112358410.png" alt="image-20200704112358410" style="zoom:50%;" />
+  - solve linear prtical differential equation by fixing the colors at the seam and solving new colors $I(x,y)$ over the gradient field -> iterative conjugate gradients solver
