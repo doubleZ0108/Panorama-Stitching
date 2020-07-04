@@ -2,6 +2,7 @@
 Final Project of Computer Vision Class 1551534 Yunxin Sun
 Implementation of SURF
 Please refer to https://link.springer.com/content/pdf/10.1007/11744023_32.pdf
+Usage: python main.py [-h] [--help] [-s] [--show] img1 img2 [dest]
 """
 
 import argparse
