@@ -83,7 +83,7 @@
 
 - ghosting problem caused by the motion
 
-- create labeling for all pxels in the composite image, and merge source images along the optimal seams
+- create labeling for all pixels in the composite image, and merge source images along the optimal seams
 
   > each pixel in the composite image comes from only one source image, the ghosting problems can be avoided
 
@@ -94,7 +94,7 @@
   1. error surface $e = (I_c^o-S_c^o)^2$  (c)
   2. (d)<img src="paper_reading.assets/image-20200704101327718.png" alt="image-20200704101327718" style="zoom:50%;" />
   3. (e) all possible paths
-  4. (f) The optimal path $m_c$ can be obtained by tracing back the paths with a minimal cost from bottom to top.
+  4. (f) The optimal path $m_c$ can be obtained by tracking back the paths with a minimal cost from bottom to top.
 
 - color correction improve quality of optimal seam finding and image labeling
 
