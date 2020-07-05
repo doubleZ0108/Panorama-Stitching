@@ -25,15 +25,15 @@
 
 ## Basic Steps
 
-- Color Correction
+- **Color Correction**
   - color correction for all source images to reduce color differences
   - smoothen remaining color transitions between adjacent images
-- Image Labeling
+- **Image Labeling**
   - error surface is constructed with squared differences between overlapping images
-  - low-cost path is found through the error surface by dunamic programming and used as an optimal seam to create labeling
-- Image Blending Operations
-  - linear blending -> source images are similar in color and luminance
-  - poisson blending -> colors remain too different
+  - low-cost path is found through the error surface by dynamic programming and used as an optimal seam to create labeling
+- **Image Blending Operations**
+  - **linear blending** -> source images are similar in color and luminance
+  - **poisson blending** -> colors remain too different
 
 
 
@@ -41,9 +41,11 @@
 
 ![image-20200703213150950](paper_reading.assets/image-20200703213150950.png)
 
-- dont't need to keep all source images in memory due to the sequential stitching
-- dynamiic programming for optimal seam finding allowing image labeling mush faster than using graph cut
+- don't need to keep all source images in memory due to the sequential stitching
+- dynamic programming for optimal seam finding allowing image labeling mush faster than using graph cut
 - combination of color correction and image blending allow to construct high-quality panoramic image
+- high-quality panoramic images from long image sequences with very different colors and luminance
+- work well on both indoor and outdoor scenes
 
 
 
@@ -53,7 +55,7 @@
 
 - images captured in paper: automated setting s for focus, exposure, and white balance
 
-- compute light averages in the overlap area by linearizing the gamma-corrected RGB values
+- compute light averages in the overlap area by linearizing the gamma-corrected RGB values 
 
 - <img src="paper_reading.assets/image-20200703234621857.png" alt="image-20200703234621857" style="zoom:50%;" />
 
