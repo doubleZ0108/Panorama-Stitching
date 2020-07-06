@@ -6,7 +6,16 @@ Computer Vision | Tongji Univ. SSE Course Project
 
 🎙[PRESENTATION](https://github.com/doubleZ0108/Panorama-Stitching/blob/master/presentation.pdf)
 
-[toc]
+#### Table of Contents
+
+   * [Panorama Stitching](#panorama-stitching)
+      * [Background](#background)
+      * [Experiment](#experiment)
+         * [SIFT](#sift)
+         * [SURF](#surf)
+         * [Fast Panorama Stitching on Mobile](#fast-panorama-stitching-on-mobile)
+      * [About the Author](#about-the-author)
+      * [Project Structure](#project-structure)
 
 ------
 
@@ -55,12 +64,12 @@ Sometimes, when capturing, we can only get a partial image of the object, especi
 
 ## About the Author
 
-|                 |                 |                       |
-| --------------- | --------------- | --------------------- |
-| **Team Leader** | Zhe ZHANG       | dbzdbz@tongji.edu.cn  |
-| **Team Member** | Kaixin CHEN     | 1753188@tongji.edu.cn |
-| **Team Member** | Yunxin SUN      | 1551534@tongji.edu.cn |
-| **Advisor**     | Prof. Lin ZHANG | cs                    |
+|                 |                 |                          |
+| --------------- | --------------- | ------------------------ |
+| **Team Leader** | Zhe ZHANG       | dbzdbz@tongji.edu.cn     |
+| **Team Member** | Kaixin CHEN     | 1753188@tongji.edu.cn    |
+| **Team Member** | Yunxin SUN      | 1551534@tongji.edu.cn    |
+| **Advisor**     | Prof. Lin ZHANG | cslinzhang@tongji.edu.cn |
 
 <br/>
 
