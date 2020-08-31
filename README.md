@@ -2,26 +2,49 @@
 
 Computer Vision | Tongji Univ. SSE Course Project
 
-📝[REPORT](https://github.com/doubleZ0108/Panorama-Stitching/blob/master/report.pdf)
-
-🎙[PRESENTATION](https://github.com/doubleZ0108/Panorama-Stitching/blob/master/presentation.pdf)
-
-#### Table of Contents
-
-   * [Panorama Stitching](#panorama-stitching)
-      * [Background](#background)
-      * [Experiment](#experiment)
-         * [SIFT](#sift)
-         * [SURF](#surf)
-         * [Fast Panorama Stitching on Mobile](#fast-panorama-stitching-on-mobile)
-      * [About the Author](#about-the-author)
-      * [Project Structure](#project-structure)
+* [Background](#background)
+* [Project Structure](#project-structure)
+* [Experiment](#experiment)
+   * [SIFT](#sift)
+   * [SURF](#surf)
+   * [Fast Panorama Stitching on Mobile](#fast-panorama-stitching-on-mobile)
+* [About the Author](#about-the-author)
 
 ------
 
 ## Background
 
 Sometimes, when capturing, we can only get a partial image of the object, especially when the size of the object is extremely large. However, if the two partial images have some content overlapping, we can make use of CV algorithms to "stitch" them together to get a panorama of the scene. This is exactly the purpose of this project.
+
+<br/>
+
+## Project Structure
+
+- `Experiment/`
+
+  - [Panorama Stitching base on SIFT](https://github.com/doubleZ0108/Panorama-Stitching/tree/master/Panorama-Stitching-SIFT)
+  - [Panorama Stitching SURF](https://github.com/doubleZ0108/Panorama-Stitching/tree/master/Panorama-Stitching-SURF)
+  - [Panorama Stitching on Mobile](https://github.com/doubleZ0108/Panorama-Stitching/tree/master/Panorama-Stitching-on-Mobile)
+
+  ```
+  .
+  ├── doc
+  │   └── paper_reading.pdf
+  ├── img
+  │   ├── ...
+  ├── paper
+  │   └── ...
+  ├── pre
+  │   ├── pre.pdf
+  │   └── script.md
+  └── src
+      └── ...
+  ```
+
+- `document/`
+
+  - 📝[report](https://github.com/doubleZ0108/Panorama-Stitching/blob/master/doc/report.pdf)
+  - 🎙[presentation slides](https://github.com/doubleZ0108/Panorama-Stitching/blob/master/doc/presentation.pdf)
 
 <br/>
 
@@ -64,53 +87,9 @@ Sometimes, when capturing, we can only get a partial image of the object, especi
 
 ## About the Author
 
-|                 |                 |                          |
+| Item            | Name            | Email                    |
 | --------------- | --------------- | ------------------------ |
 | **Team Leader** | Zhe ZHANG       | dbzdbz@tongji.edu.cn     |
 | **Team Member** | Kaixin CHEN     | 1753188@tongji.edu.cn    |
 | **Team Member** | Yunxin SUN      | 1551534@tongji.edu.cn    |
 | **Advisor**     | Prof. Lin ZHANG | cslinzhang@tongji.edu.cn |
-
-<br/>
-
-## Project Structure
-
-```
-.
-├── Panorama-Stitching-SURF
-│   ├── paper
-│   │   └── SURF_original_paper.pdf
-│   ├── pre
-│   │   ├── README.md
-│   │   └── script.md
-│   └── src
-│       ├── main.py
-│       └── requirement.txt
-├── Panorama-Stitching-base-on-SIFT
-│   ├── doc
-│   │   └── SIFT精简流程.pdf
-│   ├── paper
-│   │   └── sift.pdf
-│   ├── pre
-│   │   ├── SIFT.pptx
-│   │   └── script.md
-│   └── src
-│       ├── README.md
-│       ├── main.py
-│       └── siftPy.py
-├── Panorama-Stitching-on-Mobile
-│   ├── doc
-│   │   └── paper_reading.pdf
-│   ├── img
-│   ├── paper
-│   │   └── Fast Panorama Stitching for High-Quality Panoramic Images on Mobile Phones.pdf
-│   ├── pre
-│   │   ├── pre.pptx
-│   │   └── script.md
-│   └── src
-│       └── fast-panorama-stitching-mobile.ipynb
-├── README.md
-├── presentation.pdf
-└── report.pdf
-```
-
